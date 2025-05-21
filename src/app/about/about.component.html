@@ -1,0 +1,45 @@
+<section class="about-section">
+  <div class="container">
+    <h1>About Me</h1>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+            Hello! I'm Miguel, a passionate and creative full stack developer with a growing skill set in building modern, 
+            responsive web applications using Angular for the frontend and NestJS with MySQL on the backend. 
+            I enjoy turning ideas into interactive, functional solutions that work seamlessly from end to end.
+        </p>
+
+        <p>
+            I'm always learning new tools and techniques to improve both user experience and system performance, 
+            and I enjoy collaborating with others to build meaningful and user-focused digital products.
+        </p>
+
+      </div>
+
+      <div class="about-image">
+        <img src="assets/miguel.jpeg" alt="Miguel" />
+      </div>
+
+    </div>
+
+    <div class="skills">
+        <h3>Skills</h3>
+
+        <div class="skill-group">
+            <h4>Technical Skills</h4>
+            <ul class="skill-list">
+                <li *ngFor="let skill of technicalSkills">{{ skill }}</li>
+            </ul>
+        </div>
+
+        <div class="skill-group">
+            <h4>Personal Skills</h4>
+            <ul class="skill-list">
+                <li *ngFor="let skill of personalSkills">{{ skill }}</li>
+            </ul>
+        </div>
+    </div>
+
+  </div>
+</section>

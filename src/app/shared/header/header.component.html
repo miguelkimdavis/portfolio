@@ -1,0 +1,25 @@
+<header class="navbar" [class.mobile-open]="isMobileMenuOpen">
+  <div class="container">
+    <a class="logo" routerLink="/">MIGUEL</a>
+
+    <nav class="desktop nav-links">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+      <a routerLink="/project" routerLinkActive="active">Projects</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </nav>
+
+    <div class="hamburger" (click)="toggleMobileMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <nav class="mobile nav-links" *ngIf="isMobileMenuOpen">
+      <a routerLink="/" (click)="closeMobileMenu()" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="/about" (click)="closeMobileMenu()" routerLinkActive="active">About</a>
+      <a routerLink="/project" (click)="closeMobileMenu()" routerLinkActive="active">Projects</a>
+      <a routerLink="/contact" (click)="closeMobileMenu()" routerLinkActive="active">Contact</a>
+    </nav>
+  </div>
+</header>

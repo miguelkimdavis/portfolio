@@ -1,0 +1,84 @@
+.contact-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e1e1e;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  display: block;
+  font-size: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.2);
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+button.btn {
+  align-self: center;
+  padding: 12px 40px;
+  font-size: 16px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+button.btn:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 25px 20px;
+  }
+
+  .contact-container h2 {
+    font-size: 24px;
+  }
+
+  button.btn {
+    width: 100%;
+  }
+}
